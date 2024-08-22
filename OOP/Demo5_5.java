@@ -1,7 +1,12 @@
 class Box{
-	int length;		
-	int width;		
-	int height;		
+	//----------------------Java class ekaka thiyenna puluwan attribute saha method vitharai order ekak na---------------------
+	public void setSize(int length, int width, int height){
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	}
+	
+	int height;	
 	
 	public void printVolume(){
 		int volume; 
@@ -9,14 +14,12 @@ class Box{
 		System.out.println("Volume of the box is : " + volume);
 	}
 	
-	public void setSize(int length, int width, int height){
-		length = length;
-		width = width;
-		height = height;
-	}
+	int length;
+	
+	int width;	
 }
 
-class Demo5_2{
+class Demo5_5{
 	public static void main(String[]args){
 		Box b1 = new Box();
 		b1.setSize(12,5,3);
@@ -26,3 +29,5 @@ class Demo5_2{
 		b1.printVolume();
 	}
 }
+
+

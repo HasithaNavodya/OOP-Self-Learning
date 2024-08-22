@@ -10,13 +10,13 @@ class Box{
 	}
 	
 	public void setSize(int length, int width, int height){
-		length = length;
-		width = width;
-		height = height;
+		this.length = length;
+		this.width = width;
+		this.height = height;
 	}
 }
 
-class Demo5_2{
+class Demo5_3{
 	public static void main(String[]args){
 		Box b1 = new Box();
 		b1.setSize(12,5,3);
@@ -26,3 +26,4 @@ class Demo5_2{
 		b1.printVolume();
 	}
 }
+
