@@ -1,15 +1,15 @@
-/*Parameterized Contructor*/
+/*Constructor*/
 class Box {
     int length;
     int width;
     int height;
     
-    public Box(int length, int width, int height){
-		this.length = length;
-		this.width  = width;
-		this.height = height;
-		System.out.println("Box(int,int,int)");
-	
+    //Constructor. no return type and with class name "Box"
+    Box(){
+		length = 1;
+		width  = 1;
+		height = 1;
+		System.out.println("Calling constructor"); 
 	}
 
     public void printVolume() {
@@ -21,10 +21,9 @@ class Box {
 
 class Demo5_6_5{
     public static void main(String[] args) {
-        Box b1 = new Box(12,5,3); //Calling parameterized constructor 
-        System.out.println("length of b1 : " + b1.length);
-		System.out.println("width  of b1 : " + b1.width);
-		System.out.println("height of b1 : " + b1.height);
-		b1.printVolume();
+        Box b1 = new Box(); //--> "Box()", calling constructor 
+        System.out.println("length of the box  : " + b1.length);
+		System.out.println("width  of the box : " + b1.width);
+		System.out.println("height of the box : " + b1.height);
     }
 }
